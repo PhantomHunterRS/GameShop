@@ -38,7 +38,7 @@ public class Roulette {
         return allQuantity;
     }
 
-    private void setFrequencyOfLossToysAll() {
+    public void setFrequencyOfLossToysAll() {
         int allQuantity = countAllQuantity();
         double probability = 0.0;
         for (Toy x : toyList) {
@@ -49,7 +49,6 @@ public class Roulette {
     }
     public Toy rotationRoulette() {
         setFrequencyOfLossToysAll();
-        printPrice();
         Toy winToy = null;
         Random random = new Random();
         int rou = random.nextInt(100);
